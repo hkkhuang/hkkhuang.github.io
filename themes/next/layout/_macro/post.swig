@@ -209,11 +209,13 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-file-word-o"></i>
                 </span>
+				
                 {% if theme.post_wordcount.item_text %}
+				<span class="post-meta-divider">|</span>
                   <span class="post-meta-item-text">{{ __('post.wordcount') }}</span>
                 {% endif %}
                 <span title="{{ __('post.wordcount') }}">
-                  {{ wordcount(post.content) }}
+                  {{ wordcount(post.content) }} 字
                 </span>
               {% endif %}
 
@@ -229,7 +231,7 @@
                   <span class="post-meta-item-text">{{ __('post.min2read') }}</span>
                 {% endif %}
                 <span title="{{ __('post.min2read') }}">
-                  {{ min2read(post.content) }}
+                  {{ min2read(post.content) }} 分钟
                 </span>
               {% endif %}
             </div>
@@ -319,6 +321,12 @@
         {% include 'my-copyright.swig' %}
       {% endif %}
 	</div>
+	
+	<div>
+	  {% if not is_index %}
+		{% include 'passage-end-tag.swig' %}
+	  {% endif %}
+	</div>
 
     {% if theme.wechat_subscriber.enabled and not is_index %}
       <div>
@@ -342,7 +350,7 @@
       {% if post.tags and post.tags.length and not is_index %}
         <div class="post-tags">
           {% for tag in post.tags %}
-            <a href="{{ url_for(tag.path) }}" rel="tag"># {{ tag.name }}</a>
+            <a href="{{ url_for(tag.path) }}" <i class="fa fa-tag"></i> {{ tag.name }}</a>
           {% endfor %}
         </div>
       {% endif %}

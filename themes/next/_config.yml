@@ -12,7 +12,15 @@ keywords: "Hexo, NexT"
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
 rss:
-
+#feed:
+#  type: atom
+#  path: atom.xml
+#  limit: 20
+#  hub:
+#  content:
+#  content_limit: 140
+#  content_limit_delim: ' '
+  
 # Specify the date when the site was setup
 since: 2018
 
@@ -77,9 +85,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-#scheme: Muse
+scheme: Muse
 #scheme: Mist
-scheme: Pisces
+#scheme: Pisces
 #scheme: Gemini
 
 
@@ -93,6 +101,7 @@ scheme: Pisces
 social:
   #LinkLabel: Link
   GitHub: https://github.com/hkkhuang
+  E-Mail: mailto:hkkhuang@163.com
   微博: http://weibo.com/kekewn
 
 # Social Links Icons
@@ -124,6 +133,9 @@ social_icons:
 #links_layout: inline
 #links:
   #Title: http://example.com/
+#links_title: 
+#links:
+#  拙: http://sosad.cn/
 
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
@@ -200,13 +212,14 @@ post_meta:
   created_at: true
   updated_at: false
   categories: true
-
+  
+# 统计功能 字数 阅读时长
 # Post wordcount display settings
 # Dependencies: https://github.com/willin/hexo-wordcount
 post_wordcount:
   item_text: true
-  wordcount: false
-  min2read: false
+  wordcount: true
+  min2read: true
   separated_meta: true
 
 # Wechat Subscriber
@@ -252,8 +265,8 @@ custom_logo:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
 # highlight_theme: normal
-highlight_theme: night
-
+#highlight_theme: night
+highlight_theme: normal
 
 # ---------------------------------------------------------------
 # Font Settings
@@ -286,6 +299,7 @@ font:
   posts:
     external: true
     family:
+    size:
 
   # Font settings for Logo
   # Fallback to `global` font settings.
@@ -293,15 +307,17 @@ font:
   logo:
     external: true
     family:
-    size:
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
     external: true
-    family:
+    family: PT Mono
     size:
 
-
+# 文章末尾添加“本文结束”标记
+passage_end_tag:
+  enabled: true
 # ---------------------------------------------------------------
 # Third Party Services Settings
 # ---------------------------------------------------------------
@@ -384,7 +400,7 @@ changyan:
 # user_id must NOT be null when admin_enable is true!
 # you can visit http://dev.duoshuo.com get duoshuo user id.
 duoshuo_info:
-  ua_enable: true
+  ua_enable: trueAuthor
   admin_enable: false
   user_id: 0
   #admin_nickname: Author
@@ -448,7 +464,7 @@ busuanzi_count:
   # custom pv span for one page only
   page_pv: true
   page_pv_header: <i class="fa fa-file-o"></i>
-  page_pv_footer:
+  page_pv_footer: 
 
 
 # Tencent analytics ID
@@ -499,6 +515,7 @@ local_search:
   top_n_per_article: 1
 
 
+
 # ---------------------------------------------------------------
 # Tags Settings
 # ---------------------------------------------------------------
@@ -533,7 +550,8 @@ tabs:
     labels: true
   border_radius: 0
 
-
+ 
+  
 #! ---------------------------------------------------------------
 #! DO NOT EDIT THE FOLLOWING SETTINGS
 #! UNLESS YOU KNOW WHAT YOU ARE DOING
@@ -570,8 +588,8 @@ canvas_nest: false
 #canvas_nest: true
 
 # three_waves
-#three_waves: false
-three_waves: true
+three_waves: false
+#three_waves: true
 
 # canvas_lines
 canvas_lines: false
