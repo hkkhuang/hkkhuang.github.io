@@ -16,25 +16,25 @@ copyright: true
 2、在本地库中，将push后灰色文件夹剪切移除保存在其他路径下（不要删除）；
 
 3、接下来依次执行以下命令：
+```
+git add .
 
-	git add .
+git commit -m "xxx"
 
-	git commit -m "xxx"
- 
-    git push origin hexo
-
+git push origin hexo
+```
 ![](http://p6dpqooos.bkt.clouddn.com/18-4-24/61023918.jpg)
 
 4、将第一步中保存到其他路径的的文件再次粘贴进来：
 
 5、接下来再依次执行以下命令：
+```
+git add .
 
-	git add .
+git commit -m "xxx"
 
-	git commit -m "xxx"
- 
-    git push origin hexo
-
+git push origin hexo
+```
 ![](http://p6dpqooos.bkt.clouddn.com/18-4-24/91279484.jpg)
 
 ![](http://p6dpqooos.bkt.clouddn.com/18-4-24/99986498.jpg)
