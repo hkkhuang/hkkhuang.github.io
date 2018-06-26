@@ -138,7 +138,7 @@ def print_generator_function_next():
 
 print_generator_function_next()
 
-``` 
+```
 
 在yield掉所有的值后， **next()**触发了一个 **`StopIteration的异常`**，这个异常说明所有的值都已经被yield完了。 
 
@@ -155,7 +155,7 @@ next(my_string)
 # TypeError: str object is not an iterator
 ```
 
-这个异常说那个**`str对象`**不是一个迭代器，但是**`str对象是一个可迭代对象`**。 这意味着它支持迭代， 但不能直接对其进行迭代操作。需要用到一个内置函数--**`内置函数iter`**。
+这个异常说明**`str对象`**不是一个迭代器，但是**`str对象是一个可迭代对象`**。 这意味着它支持迭代， 但不能直接对其进行迭代操作。需要用到一个内置函数--**`内置函数iter`**。
 
 **`内置函数iter`**， 将根据一个可迭代对象返回一个迭代器对象。
 
@@ -174,4 +174,5 @@ def iter_function():
         print(item)
 
 iter_function()
+
 ```
