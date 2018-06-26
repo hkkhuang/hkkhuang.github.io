@@ -6,7 +6,7 @@ categories: Python
 copyright: true
 ---
 
-根据维基百科， 迭代器是一个让程序员可以遍历一个容器（特别是列表）的对象。 然而，一个迭代器在遍历并读取一个容器的数据元素时， 并不会执行一个迭代。换句话说这有三个部分：
+根据维基百科， 迭代器是一个可以遍历一个容器（特别是列表）的对象。 然而，一个迭代器在遍历并读取一个容器的数据元素时， 并不会执行一个迭代。换句话说这有三个部分：
 - 可迭代对象(Iterable)
 - 迭代器(Iterator)
 - 迭代(Iteration)
@@ -144,7 +144,7 @@ print_generator_function_next()
 
 #### 内置函数iter
 
-```Python
+```
 my_string = "huangkeke"
 next(my_string)
 # Output: Traceback (most recent call last):
