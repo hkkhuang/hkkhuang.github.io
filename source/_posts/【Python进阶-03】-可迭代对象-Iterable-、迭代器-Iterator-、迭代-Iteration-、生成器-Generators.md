@@ -25,7 +25,7 @@ copyright: true
 ### 生成器(Generators)
 生成器也是一种迭代器， 但是你只能对其迭代一次。 这是因为他们并没有把所有的值存在内存中， 而是在运行时生成值。 你通过遍历来使用它们， 要么用一个**`“for”循环`**， 要么将它们传递给任意可以进行迭代的函数和结构。 大多数时候生成器是以函数来实现的。 然而，它们并不返回一个值，而是yield(暂且译作“生出”)一个值。 
 
-```Python
+```
 def generator_function():
     """
     生成器函数
@@ -60,7 +60,7 @@ print_generator_function()
 
 **使用生成器计算斐波那契数列的生成器**
 
-```Python
+```
 def fibon(n):
     """
     斐波那契数列生成器
@@ -84,13 +84,14 @@ def fibonacci():
         
 fibonacci()
 ```
+
 用这种方式式， 我们可以不用担心会使用大量的资源。
 
 **不使用生成器计算斐波那契数列的生成器**
 
 如果使用如下方式来实现的话会在计算很大的输入参数时， 用尽所有的资源。
 
-```Python
+```
 def fibon(n):
     """
     使用列表实现斐波那契数列
@@ -112,7 +113,7 @@ fibon(100000)
 
 Python内置函数：**` next()`**， 它允许我们获取一个序列的下一个元素。
 
-```Python
+```
 def generator_function_next():
     """
     输出需要用到ython内置函数： next()
@@ -136,11 +137,13 @@ def print_generator_function_next():
     # StopIteration
 
 print_generator_function_next()
+
 ``` 
 
 在yield掉所有的值后， **next()**触发了一个 **`StopIteration的异常`**，这个异常说明所有的值都已经被yield完了。 
 
 而在使用**`for循环`**时没有这个异常？？？ **`因为for循环会自动捕捉到这个异常并停止调用 next()。`**
+
 
 #### 内置函数iter
 
@@ -151,11 +154,12 @@ next(my_string)
 # File "<stdin>", line 1, in <module>
 # TypeError: str object is not an iterator
 ```
+
 这个异常说那个**`str对象`**不是一个迭代器，但是**`str对象是一个可迭代对象`**。 这意味着它支持迭代， 但不能直接对其进行迭代操作。需要用到一个内置函数--**`内置函数iter`**。
 
 **`内置函数iter`**， 将根据一个可迭代对象返回一个迭代器对象。
 
-```Python
+```
 def iter_function():
     """
     Python内置函数 iter()
