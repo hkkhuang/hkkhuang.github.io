@@ -1,4 +1,4 @@
- ---
+---
 title: 【Python进阶-06】-ternary_operator 三元运算符（条件表达式）
 date: 2018-07-21 22:23:51
 tags: Python
