@@ -17,7 +17,7 @@ copyright: true
 #如果条件为真， 返回真 否则返回假
 condition_is_true if condition else condition_is_false
 ```
-
+<!--more-->
 例子：
 ```
 
@@ -43,7 +43,7 @@ if __name__ == '__main__':
     main()
 ```
 它允许用简单的一行快速判断， 而不是使用复杂的多行if语句。 这在大多数时候非常有用， 而且可以使代码简单可维护。
-<!--more-->
+
 
 另一个晦涩一点的用法比较少见， 它使用了元组：
 伪代码:

@@ -1,5 +1,5 @@
 ---
-title: 【Python进阶-07】-装饰器(Decorators).md
+title: 【Python进阶-07】-装饰器(Decorators)
 date: 2018-07-24 22:11:43
 tags: Python
 categories: Python
@@ -34,7 +34,7 @@ del hi
 print(my_hi())
 # Output: hi,hkkhuang
 ```
-
+<!--more-->
 ### 在函数中定义函数
 
 ```
