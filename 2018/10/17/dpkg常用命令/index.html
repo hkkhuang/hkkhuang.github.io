@@ -108,7 +108,7 @@
 <meta property="og:site_name" content="hkkhuang">
 <meta property="og:description" content="dpkg命令dpkg命令是Debian Linux系统用来安装、创建和管理软件包的实用工具。 语法1dpkg(选项)(参数) 选项12345678-i：安装软件包；-r：删除软件包；-P：删除软件包的同时删除其配置文件；-L：显示于软件包关联的文件；-l：显示已安装软件包列表；--unpack：解开软件包；-c：显示软件包内文件列表；--confiugre：配置软件包。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-17T06:28:35.308Z">
+<meta property="og:updated_time" content="2018-10-17T07:31:32.868Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="dpkg命令">
 <meta name="twitter:description" content="dpkg命令dpkg命令是Debian Linux系统用来安装、创建和管理软件包的实用工具。 语法1dpkg(选项)(参数) 选项12345678-i：安装软件包；-r：删除软件包；-P：删除软件包的同时删除其配置文件；-L：显示于软件包关联的文件；-l：显示已安装软件包列表；--unpack：解开软件包；-c：显示软件包内文件列表；--confiugre：配置软件包。">
@@ -429,11 +429,11 @@
 
       
         <h1 id="dpkg命令"><a href="#dpkg命令" class="headerlink" title="dpkg命令"></a>dpkg命令</h1><p>dpkg命令是Debian Linux系统用来安装、创建和管理软件包的实用工具。</p>
-<h3 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg(选项)(参数)</span><br></pre></td></tr></table></figure>
-<h3 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-i：安装软件包；</span><br><span class="line">-r：删除软件包；</span><br><span class="line">-P：删除软件包的同时删除其配置文件；</span><br><span class="line">-L：显示于软件包关联的文件；</span><br><span class="line">-l：显示已安装软件包列表；</span><br><span class="line">--unpack：解开软件包；</span><br><span class="line">-c：显示软件包内文件列表；</span><br><span class="line">--confiugre：配置软件包。</span><br></pre></td></tr></table></figure>
+<h2 id="语法"><a href="#语法" class="headerlink" title="语法"></a>语法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dpkg(选项)(参数)</span><br></pre></td></tr></table></figure>
+<h2 id="选项"><a href="#选项" class="headerlink" title="选项"></a>选项</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">-i：安装软件包；</span><br><span class="line">-r：删除软件包；</span><br><span class="line">-P：删除软件包的同时删除其配置文件；</span><br><span class="line">-L：显示于软件包关联的文件；</span><br><span class="line">-l：显示已安装软件包列表；</span><br><span class="line">--unpack：解开软件包；</span><br><span class="line">-c：显示软件包内文件列表；</span><br><span class="line">--confiugre：配置软件包。</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<h3 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deb软件包：指定要操作的.deb软件包。</span><br></pre></td></tr></table></figure>
-<h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i package.deb     #安装包</span><br><span class="line">dpkg -r package         #删除包</span><br><span class="line">dpkg -P package         #删除包（包括配置文件）</span><br><span class="line">dpkg -L package         #列出与该包关联的文件</span><br><span class="line">dpkg -l package         #显示该包的版本</span><br><span class="line">dpkg --unpack package.deb  #解开deb包的内容</span><br><span class="line">dpkg -S keyword            #搜索所属的包内容</span><br><span class="line">dpkg -l                    #列出当前已安装的包</span><br><span class="line">dpkg -c package.deb        #列出deb包的内容</span><br><span class="line">dpkg --configure package   #配置包</span><br></pre></td></tr></table></figure>
+<h2 id="参数"><a href="#参数" class="headerlink" title="参数"></a>参数</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deb软件包：指定要操作的.deb软件包。</span><br></pre></td></tr></table></figure>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">dpkg -i package.deb     #安装包</span><br><span class="line">dpkg -r package         #删除包</span><br><span class="line">dpkg -P package         #删除包（包括配置文件）</span><br><span class="line">dpkg -L package         #列出与该包关联的文件</span><br><span class="line">dpkg -l package         #显示该包的版本</span><br><span class="line">dpkg --unpack package.deb  #解开deb包的内容</span><br><span class="line">dpkg -S keyword            #搜索所属的包内容</span><br><span class="line">dpkg -l                    #列出当前已安装的包</span><br><span class="line">dpkg -c package.deb        #列出deb包的内容</span><br><span class="line">dpkg --configure package   #配置包</span><br></pre></td></tr></table></figure>
 <p>参考：</p>
 <p><a href="http://man.linuxde.net/dpkg" target="_blank" rel="noopener">Linux命令大全：http://man.linuxde.net/dpkg</a></p>
 
@@ -465,7 +465,7 @@
   <p><span>本文标题:</span><a href="/2018/10/17/dpkg常用命令/">dpkg命令</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 hkkhuang 的个人博客">hkkhuang</a></p>
   <p><span>发布时间:</span>2018年10月17日 - 14:10</p>
-  <p><span>最后更新:</span>2018年10月17日 - 14:10</p>
+  <p><span>最后更新:</span>2018年10月17日 - 15:10</p>
   <p><span>原始链接:</span><a href="/2018/10/17/dpkg常用命令/" title="dpkg命令">http://hkkhuang.com/2018/10/17/dpkg常用命令/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://hkkhuang.com/2018/10/17/dpkg常用命令/"  aria-label="复制成功！"></i></span>
   </p>
@@ -692,7 +692,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#dpkg命令"><span class="nav-number">1.</span> <span class="nav-text">dpkg命令</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#语法"><span class="nav-number">1.0.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选项"><span class="nav-number">1.0.2.</span> <span class="nav-text">选项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参数"><span class="nav-number">1.0.3.</span> <span class="nav-text">参数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实例"><span class="nav-number">1.0.4.</span> <span class="nav-text">实例</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#dpkg命令"><span class="nav-number">1.</span> <span class="nav-text">dpkg命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#语法"><span class="nav-number">1.1.</span> <span class="nav-text">语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选项"><span class="nav-number">1.2.</span> <span class="nav-text">选项</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数"><span class="nav-number">1.3.</span> <span class="nav-text">参数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实例"><span class="nav-number">1.4.</span> <span class="nav-text">实例</span></a></li></ol></li></ol></div>
             
 
           </div>
