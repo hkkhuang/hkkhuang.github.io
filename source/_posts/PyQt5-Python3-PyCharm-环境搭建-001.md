@@ -14,6 +14,7 @@ copyright: true
 * PyQt5 5.11.2 版本
 * pyinstaller：将python代码打包为可执行的exe文件。
 
+<!--more-->
 ### 需要安装的工具/包
 
 * sip
@@ -47,9 +48,9 @@ pip install SIP
 brew install sip
 ```
 
-#### 安装PyQt5
+### 安装PyQt5
 
-##### 方式一：pip安装
+#### 方式一：pip安装
 使用支持的Python版本，你可以从PyPi安装SIP 通过运行：
 
 在Anaconda中新建一个环境，专门用于PyQt5的环境搭建：
@@ -67,17 +68,17 @@ pip install PyQt5
 ![](http://p6dpqooos.bkt.clouddn.com/18-10-24/51277945.jpg)
 
 
-##### 方式二：使用Homebrew
+#### 方式二：使用Homebrew
 
 ```
 brew install pyqt
 ```
 
-#### 安装Qt
+### 安装Qt
 
 安装很简单，一路下一步，不用配置什么，默认的配置即可，只是用Qt的QtDesigner可执行程序，最后不用启动，直接关闭就行。
 
-##### 方式一：本地安装
+#### 方式一：本地安装
 
 [http://download.qt.io/official_releases/qt/5.8/5.8.0/qt-opensource-mac-x64-clang-5.8.0.dmg](http://download.qt.io/official_releases/qt/5.8/5.8.0/qt-opensource-mac-x64-clang-5.8.0.dmg)
 
@@ -87,7 +88,7 @@ brew install pyqt
 
 
 
-##### 方式二：使用Homebrew
+#### 方式二：使用Homebrew
 
 ```
 brew install qt
@@ -95,6 +96,8 @@ brew install qt
 
 
 到这里需要安装的都安装完成了，下面需要把所以安装的东西配置起来。
+
+### 相关配置
 
 #### 配置Qt Designer
 
