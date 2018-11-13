@@ -1,7 +1,7 @@
 ---
 title: iTerm2及oh-my-zsh的安装及配置
 date: 2018-11-06 10:55:43
-tags: [Terminal，Tools]
+tags: [Terminal, Tools]
 categories: Tools
 copyright: true
 ---
