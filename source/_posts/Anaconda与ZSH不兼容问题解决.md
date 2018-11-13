@@ -1,7 +1,7 @@
 ---
 title: Anaconda与ZSH不兼容问题解决
 date: 2018-11-13 14:44:14
-tags: [Terminal，Tools，Python]
+tags: [Terminal, Tools, Python]
 categories: Tools
 copyright: true
 ---

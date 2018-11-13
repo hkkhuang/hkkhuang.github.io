@@ -1,7 +1,7 @@
 ---
 title: 'PyQt5-Python3-PyCharm 环境搭建-001'
 date: 2018-10-24 21:37:33
-tags: [Tools, Python,PyQt5]
+tags: [Tools, Python, PyQt5]
 categories: Python
 copyright: true
 ---
