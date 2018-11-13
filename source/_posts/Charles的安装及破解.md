@@ -1,7 +1,7 @@
 ---
 title: Charles的安装及破解
 date: 2018-11-13 16:18:52
-tags: [Charles，Tools]
+tags: [Charles, Tools]
 categories: Tools
 copyright: true
 ---
@@ -9,7 +9,7 @@ copyright: true
 ![](http://p6dpqooos.bkt.clouddn.com/18-11-13/17715257.jpg)
 
 #### 安装文件下载地址：
-Charles 的官方网站（[https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)）下载最新版的 Charles 安装包（或者是需要的响应版本）.
+Charles 的官方网站（[https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)）下载最新版的 Charles 安装包（或者是需要的相应版本）。
 
 <!--more-->
 
