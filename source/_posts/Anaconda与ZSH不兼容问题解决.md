@@ -10,7 +10,7 @@ copyright: true
 
 需要使用pip安装一些包，打开 Anaconda Terminal后如下错误：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/89740900.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/66536265.jpg)
 
 <!--more-->
 
@@ -39,7 +39,7 @@ chsh -s /bin/bash
 
 重启Terminal，可以正常使用Anaconda：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/4666490.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/69543569.jpg)
 
 使用完成后在切换回ZSH：
 
