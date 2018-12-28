@@ -6,17 +6,17 @@ categories: Tools
 copyright: true
 ---
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/17715257.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/1882344.jpg)
 
 #### 安装文件下载地址：
 Charles 的官方网站（[https://www.charlesproxy.com/download/](https://www.charlesproxy.com/download/)）下载最新版的 Charles 安装包（或者是需要的相应版本）。
 
 <!--more-->
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/4310658.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/6834700.jpg)
 
 Previous Release：
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/17786643.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/63067752.jpg)
 
 Mac端是一个 dmg 后缀的文件，下载完成后打开安装将 Charles 拖到 Application 目录下即完成安装。
 
@@ -30,13 +30,13 @@ License Key: 48891cf209c6d32bf4
 ```
 注册步骤如下：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/22239666.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/17105271.jpg)
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/7600624.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/18791546.jpg)
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/8961029.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/46590957.jpg)
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-13/82015916.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/83323848.jpg)
 
 ##### 方法二：生成破解文件
 
