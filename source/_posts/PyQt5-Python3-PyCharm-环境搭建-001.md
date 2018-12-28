@@ -55,7 +55,7 @@ brew install sip
 
 在Anaconda中新建一个环境，专门用于PyQt5的环境搭建：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/58641812.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/58983950.jpg)
 
 在该新建的环境下，打开Terminal，使用pip方式安装PyQt5，命令如下：
 
@@ -65,7 +65,7 @@ pip install PyQt5
 
 安装完成：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/51277945.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/20312294.jpg)
 
 
 #### 方式二：使用Homebrew
@@ -103,13 +103,13 @@ brew install qt
 
 打开你的pycharm
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/82978134.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/82263148.jpg)
 
 
 #### 配置PyUIC
 用于把QtDesigner创建的UI文件转换成py文件。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/91413758.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/78026358.jpg)
 
 Parameters:参数
 
@@ -120,45 +120,45 @@ Parameters:参数
 
 使用新创建的Python、PyQt5环境新建一个项目：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/13665698.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/98321407.jpg)
 
 如下路径打开**Qt Designer程序**：
 
 **`菜单栏 ->Tools->External Tools->Qt Designer`**
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/21668429.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/70994331.jpg)
 
 启动了**Qt Designer程序**，我们就可以拖控件了。
 
 创建窗口程序，选择 **`Main Window`**，让后点击**`create`**。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/49825913.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/87169150.jpg)
 
 点击**`create`**后，会出现画布和控件
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/24273668.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/12428702.jpg)
 
 **`保存`**布局文件。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/57155589.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/7006587.jpg)
 
 在PyCharm中可以看到：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/50314264.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/89028891.jpg)
 
 选择该 **`ui 文件`**， 如下操作：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/91932339.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/38119333.jpg)
 
 这个**`命令行工具 PyUIC`** 就会把UI文件转成py文件。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/32100450.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/80790471.jpg)
 
 启动这个python文件，我们需要调用它：
 
 编写 **`main.py`**:
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/72784404.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/91680240.jpg)
 
 ```
 import sys
@@ -175,11 +175,11 @@ if __name__ == '__main__':
 ```
 运行：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/86082366.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/29919673.jpg)
 
 运行结果：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-10-24/47439591.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/86990119.jpg)
 
 
 ---
