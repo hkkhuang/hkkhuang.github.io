@@ -8,15 +8,17 @@ copyright: true
 
 一般来说，日常使用只要记住下图6个命令，就可以了。但是熟练使用，恐怕要记住60～100个命令。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-6-2/98223594.jpg)
+![Git原理](http://cdn.hkkhuang.cn/18-12-28/55850234.jpg)
 
 专用名词的译名如下
+
 ```
 Workspace：工作区
 Index / Stage：暂存区
 Repository：仓库区（或本地仓库）
 Remote：远程仓库
 ```
+
 <!--more-->
 常用 Git 命令清单：
 ### 一、新建代码库
