@@ -6,7 +6,7 @@ categories: Tools
 copyright: true
 ---
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/86476104.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/58199097.jpg)
 
 ### 1. 安装 iTerm2
 
@@ -30,7 +30,7 @@ cat /etc/shells
 
 <!--more-->
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/89748342.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/82437652.jpg)
 
 ### 2. 配置 iTerm2 主题
 
@@ -46,7 +46,7 @@ iTerm2 最常用的主题是 **Solarized Dark theme**.
 
 1. 导入成功，选择 Solarized Dark 主题。
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/45350933.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/93666532.jpg)
 
 ### 3. 配置 Oh My Zsh
 
@@ -83,11 +83,11 @@ sudo chsh -s /bin/zsh
 vim ~/.zshrc
 ```
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/50079031.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/29962800.jpg)
 
 * 更改主题之后，重启iterms2后，效果如下：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/44665832.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/88484053.jpg)
 
 **`问号 ❓`**  什么鬼？？？
 
@@ -114,17 +114,17 @@ cd fonts
 ./install.sh
 ```
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/46222177.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/68478336.jpg)
 
 安装完字体库之后，设置iTerm 2的字体：
 
 **`Profile->Text`** 选项卡中里的 **`Regular Font`**和**`Non-ASCII Font`**的字体都设置成 Powerline的字体，这里设置的字体是**`Meslo LG S DZ Regular for Powerline`**:
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/28867379.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/83211238.jpg)
 
 配置完成效果：
 
-![](http://p6dpqooos.bkt.clouddn.com/18-11-6/38871667.jpg)
+![](http://cdn.hkkhuang.cn/18-12-28/95832392.jpg)
 
 **参考：**
 
