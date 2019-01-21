@@ -12,6 +12,8 @@ ProVerif is compatible with the Linux, Mac, and Windows operating systems; it ca
 
 The remainder of this section covers installation on Linux,Mac, and Windows platforms.
 
+<!--more-->
+
 ### Installation via OPAM
 
 ProVerif has been developed using Objective Caml (OCaml) and OPAM is the package manager ofOCaml. Installing via OPAM is the simplest, especially if you already have OPAM installed.
