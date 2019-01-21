@@ -431,37 +431,16 @@
 
       
         
-          
-            <p>ProVerif is compatible with the Linux, Mac, and Windows operating systems; it can be downloadedfrom:</p>
+          <p>ProVerif is compatible with the Linux, Mac, and Windows operating systems; it can be downloadedfrom:</p>
 <p><a href="http://proverif.inria.fr/" target="_blank" rel="noopener">http://proverif.inria.fr/</a></p>
 <p>The remainder of this section covers installation on Linux,Mac, and Windows platforms.</p>
-<h3 id="Installation-via-OPAM"><a href="#Installation-via-OPAM" class="headerlink" title="Installation via OPAM"></a>Installation via OPAM</h3><p>ProVerif has been developed using Objective Caml (OCaml) and OPAM is the package manager ofOCaml. Installing via OPAM is the simplest, especially if you already have OPAM installed.</p>
-<h4 id="OPAM-installed"><a href="#OPAM-installed" class="headerlink" title="OPAM installed"></a>OPAM installed</h4><p>If you do not already have OPAM installed, download it from</p>
-<p><a href="https://opam.ocaml.org/" target="_blank" rel="noopener">https://opam.ocaml.org/</a></p>
-<p>and install it.</p>
-<p>or </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install opam</span><br></pre></td></tr></table></figure>
-<h4 id="opam-update"><a href="#opam-update" class="headerlink" title="opam update"></a>opam update</h4><p>If you already have OPAM installed, run</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opam update</span><br></pre></td></tr></table></figure>
-<p>Opam has not been initialised, please run `opam init’</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">opam init</span><br></pre></td></tr></table></figure>
-<p>to make sure that you get the latest version of ProVerif.</p>
-<p><img src="http://cdn.hkkhuang.cn/20190121150709.png" alt=""></p>
-<p><img src="http://cdn.hkkhuang.cn/20190121150939.png" alt=""></p>
-<p><img src="http://cdn.hkkhuang.cn/20190121151016.png" alt=""></p>
-<h4 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">opam depext conf-graphviz</span><br><span class="line">opam depext proverif</span><br><span class="line">opam install proverif</span><br></pre></td></tr></table></figure>
-<p>⚠️⚠️<strong>注意：</strong></p>
-<p>The first line installs graphviz, if you do not already have it. You may also install it using thepackage manager of your Linux, OSX, or cygwin distribution,especially if opam fails to install it.It is needed only for the graphical display of attacks. </p>
-<p>The second line installs <strong><code>GTK+2</code></strong> including development libraries, if you do not already have it. You mayalso install it using the packagemanager of your distribution. It is needed for the interactive simulatorproverifinteract. 【 [见问题处理] (#problem) 】</p>
-<p>Thethird line installs ProVerif itself and its OCaml dependencies.  ProVerif executables are in~/.opam/〈switch〉/bin, which is in thePATH, examples are in~/.opam/〈switch〉/doc/proverif, andvarious helper files are in~/.opam/〈switch〉/share/proverif. The directory〈switch〉is the opamswitch in which you installed ProVerif, by defaultsystem.</p>
-<p>01<img src="http://cdn.hkkhuang.cn/20190121151326.png" alt=""></p>
-<p>02<img src="http://cdn.hkkhuang.cn/20190121151644.png" alt=""></p>
-<p>03<img src="http://cdn.hkkhuang.cn/20190121154350.png" alt=""></p>
-<p><img src="http://cdn.hkkhuang.cn/20190121153259.png" alt=""></p>
-<h4 id="⚠️问题处理"><a href="#⚠️问题处理" class="headerlink" title="⚠️问题处理"></a><span id="problem">⚠️问题处理</span></h4><p><img src="http://cdn.hkkhuang.cn/20190121154601.png" alt=""></p>
-<h5 id="Mac上配置GTK"><a href="#Mac上配置GTK" class="headerlink" title="Mac上配置GTK"></a>Mac上配置GTK</h5><p>GTK version 2+</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">brew install pkg-config</span><br><span class="line">brew install gtk+3   or   brew install gtk+</span><br></pre></td></tr></table></figure>
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/01/21/Proverif-Installation/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
