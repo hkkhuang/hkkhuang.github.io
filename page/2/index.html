@@ -306,6 +306,197 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="hkkhuang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://p6dpqooos.bkt.clouddn.com/18-4-19/26231659.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="hkkhuang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/07/18/【Python进阶-05】-05-set-datastruct/" itemprop="url">【Python进阶-05】-05_set_datastruct</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-18T22:03:32+08:00">
+                2018-07-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+				
+                
+				<span class="post-meta-divider">|</span>
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                   字
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                   分钟
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="Set集合"><a href="#Set集合" class="headerlink" title="Set集合"></a>Set集合</h3><p>set(集合)是一个非常有用的数据结构。 它与<strong><code>列表(list)</code></strong>的特性类似， 区别在于<strong>set不能包含重复的值</strong>。</p>
+<p>例如你可能想检查列表中是否包含重复的元素， 你有两个选择， 第一个需要使用for循环：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">def check_list_elements():</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    使用普通方法，遍历列表，一次判断列表元素是否重复</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    some_list = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;b&apos;, &apos;d&apos;, &apos;m&apos;, &apos;n&apos;, &apos;n&apos;]  # 待检查列表</span><br><span class="line">    repeats = []  # 结果存放列表</span><br><span class="line">    for value in some_list:  # 依次遍历some_list中的元素</span><br><span class="line">        if some_list.count(value) &gt; 1:  # 判断该元素在some_list的个数，count&gt;1 说明重复</span><br><span class="line">            if value not in repeats:  # 再判断value是否已经在duplicates中（some_list中某个元素多次重复），duplicates只记录一次</span><br><span class="line">                repeats.append(value)  # 将some_list中重复的元素并且尚未添加到duplicates中的，添加进duplicates</span><br><span class="line">    print(repeats)  # 输出结果</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    check_list_elements()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/07/18/【Python进阶-05】-05-set-datastruct/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+	<div>
+	  
+	</div>
+	
+	
+	<div>
+      
+	</div>
+	
+
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://hkkhuang.com/2018/07/11/【Python进阶-04】-Map-和-Filter/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2040,7 +2231,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">19</span>
+                <span class="site-state-item-count">20</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
