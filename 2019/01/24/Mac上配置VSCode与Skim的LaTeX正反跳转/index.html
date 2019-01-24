@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Python," />
+  <meta name="keywords" content="Tools,VSCode,Latex," />
 
 
 
@@ -100,18 +100,20 @@
 
 
 
-<meta name="description" content="Set集合set(集合)是一个非常有用的数据结构。 它与列表(list)的特性类似， 区别在于set不能包含重复的值。 例如你可能想检查列表中是否包含重复的元素， 你有两个选择， 第一个需要使用for循环： 1234567891011121314151617181920def check_list_elements():    &amp;quot;&amp;quot;&amp;quot;    使用普通方法，遍历列表，一">
-<meta name="keywords" content="Python">
+<meta name="description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
+<meta name="keywords" content="Tools,VSCode,Latex">
 <meta property="og:type" content="article">
-<meta property="og:title" content="【Python进阶-05】-05_set_datastruct">
-<meta property="og:url" content="http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/index.html">
+<meta property="og:title" content="Mac上配置VSCode与Skim的LaTeX正反跳转">
+<meta property="og:url" content="http://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/index.html">
 <meta property="og:site_name" content="hkkhuang">
-<meta property="og:description" content="Set集合set(集合)是一个非常有用的数据结构。 它与列表(list)的特性类似， 区别在于set不能包含重复的值。 例如你可能想检查列表中是否包含重复的元素， 你有两个选择， 第一个需要使用for循环： 1234567891011121314151617181920def check_list_elements():    &amp;quot;&amp;quot;&amp;quot;    使用普通方法，遍历列表，一">
+<meta property="og:description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-09-30T06:35:47.670Z">
+<meta property="og:image" content="http://cdn.hkkhuang.cn/20190122144745.png">
+<meta property="og:updated_time" content="2019-01-24T09:55:26.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="【Python进阶-05】-05_set_datastruct">
-<meta name="twitter:description" content="Set集合set(集合)是一个非常有用的数据结构。 它与列表(list)的特性类似， 区别在于set不能包含重复的值。 例如你可能想检查列表中是否包含重复的元素， 你有两个选择， 第一个需要使用for循环： 1234567891011121314151617181920def check_list_elements():    &amp;quot;&amp;quot;&amp;quot;    使用普通方法，遍历列表，一">
+<meta name="twitter:title" content="Mac上配置VSCode与Skim的LaTeX正反跳转">
+<meta name="twitter:description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
+<meta name="twitter:image" content="http://cdn.hkkhuang.cn/20190122144745.png">
 
 
 
@@ -140,13 +142,13 @@
 
 
 
-  <link rel="canonical" href="http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/"/>
+  <link rel="canonical" href="http://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/"/>
 
 
 
 
 
-  <title>【Python进阶-05】-05_set_datastruct | hkkhuang</title>
+  <title>Mac上配置VSCode与Skim的LaTeX正反跳转 | hkkhuang</title>
   
 
 
@@ -306,7 +308,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/">
+    <link itemprop="mainEntityOfPage" href="http://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="hkkhuang">
@@ -323,7 +325,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">【Python进阶-05】-05_set_datastruct</h1>
+          <h1 class="post-title" itemprop="name headline">Mac上配置VSCode与Skim的LaTeX正反跳转</h1>
         
 
         <div class="post-meta">
@@ -335,8 +337,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-18T22:03:32+08:00">
-                2018-07-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-24T17:52:39+08:00">
+                2019-01-24
               </time>
             
 
@@ -358,8 +360,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Python/" itemprop="url" rel="index">
-                    <span itemprop="name">Python</span>
+                  <a href="/categories/Tools/" itemprop="url" rel="index">
+                    <span itemprop="name">Tools</span>
                   </a>
                 </span>
 
@@ -428,19 +430,26 @@
       
 
       
-        <h3 id="Set集合"><a href="#Set集合" class="headerlink" title="Set集合"></a>Set集合</h3><p>set(集合)是一个非常有用的数据结构。 它与<strong><code>列表(list)</code></strong>的特性类似， 区别在于<strong>set不能包含重复的值</strong>。</p>
-<p>例如你可能想检查列表中是否包含重复的元素， 你有两个选择， 第一个需要使用for循环：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">def check_list_elements():</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    使用普通方法，遍历列表，一次判断列表元素是否重复</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    some_list = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;b&apos;, &apos;d&apos;, &apos;m&apos;, &apos;n&apos;, &apos;n&apos;]  # 待检查列表</span><br><span class="line">    repeats = []  # 结果存放列表</span><br><span class="line">    for value in some_list:  # 依次遍历some_list中的元素</span><br><span class="line">        if some_list.count(value) &gt; 1:  # 判断该元素在some_list的个数，count&gt;1 说明重复</span><br><span class="line">            if value not in repeats:  # 再判断value是否已经在duplicates中（some_list中某个元素多次重复），duplicates只记录一次</span><br><span class="line">                repeats.append(value)  # 将some_list中重复的元素并且尚未添加到duplicates中的，添加进duplicates</span><br><span class="line">    print(repeats)  # 输出结果</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    check_list_elements()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
+        <p><img src="http://cdn.hkkhuang.cn/20190122144745.png" alt=""></p>
+<h3 id="正向搜索"><a href="#正向搜索" class="headerlink" title="正向搜索"></a>正向搜索</h3><p>正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。</p>
+<p>根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Skim.app/Contents/SharedSupport/displayline</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
-<p>还有一种更简单更优雅的解决方案， 那就是使用集合(sets)：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">def duplicates(some_list):</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    使用set检查列表中是否包含重复的元素</span><br><span class="line">    :param some_list:</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    return set([x for x in some_list if some_list.count(x) &gt; 1])</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    check_list_elements()</span><br><span class="line">    print(duplicates(some_list))</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-<h4 id="交集"><a href="#交集" class="headerlink" title="交集"></a>交集</h4><p>对比两个集合的交集（两个集合中都有的数据）， 如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">def intersect():</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    两个集合的交集</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    valid = set([&apos;yellow&apos;, &apos;red&apos;, &apos;blue&apos;, &apos;green&apos;, &apos;black&apos;])</span><br><span class="line">    input_set = set([&apos;red&apos;, &apos;brown&apos;])</span><br><span class="line">    print(input_set.intersection(valid))  # 交集运算</span><br><span class="line">    print(valid &amp; input_set)   # 交集运算</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    some_list = [&apos;a&apos;, &apos;b&apos;, &apos;c&apos;, &apos;b&apos;, &apos;d&apos;, &apos;m&apos;, &apos;n&apos;, &apos;n&apos;]</span><br><span class="line">    intersect()   # 集合交集</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure></p>
-<h4 id="并集"><a href="#并集" class="headerlink" title="并集"></a>并集</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">def union():</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    两个集合的并集</span><br><span class="line">    :return:</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    valid = set([&apos;yellow&apos;, &apos;red&apos;, &apos;blue&apos;, &apos;green&apos;, &apos;black&apos;])</span><br><span class="line">    input_set = set([&apos;red&apos;, &apos;brown&apos;])</span><br><span class="line">    print(input_set.union(valid))  # 并集运算</span><br><span class="line">    print(valid | input_set)   # 并集运算</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    union()       # 集合并集</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-<h4 id="差集"><a href="#差集" class="headerlink" title="差集"></a>差集</h4><p>你可以用差集(difference)找出无效的数据， 相当于用一个集合减去另一个集合的数据：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">def difference():</span><br><span class="line">    &quot;&quot;&quot;&quot;</span><br><span class="line">    两个集合的差集</span><br><span class="line">    &quot;&quot;&quot;</span><br><span class="line">    valid = set([&apos;yellow&apos;, &apos;red&apos;, &apos;blue&apos;, &apos;green&apos;, &apos;black&apos;])</span><br><span class="line">    input_set = set([&apos;red&apos;, &apos;brown&apos;])</span><br><span class="line">    print(input_set.difference(valid))  # 差集运算</span><br><span class="line">    print(input_set - valid)  # 差集运算</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">def main():</span><br><span class="line">    difference()  # 集合差集</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">if __name__ == &apos;__main__&apos;:</span><br><span class="line">    main()</span><br></pre></td></tr></table></figure>
-<blockquote>
-<p><a href="https://github.com/hkkhuang/PythonDev/blob/master/interPy-Python%E8%BF%9B%E9%98%B6%5B3.x%5D/05_set_datastruct.py" target="_blank" rel="noopener"><strong>GitHub-code 05_set_datastruct.py </strong></a></p>
-</blockquote>
+<p>具体用法是:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/Applications/Skim.app/Contents/SharedSupport/displayline %line &quot;%pdffile&quot; &quot;%texfile&quot;</span><br></pre></td></tr></table></figure>
+<p>此处 <strong><code>%line</code></strong> 表示 <strong><code>.tex</code></strong> 文件的行号，<strong><code>%pdffile</code></strong> 表示编译生成的 PDF 文件的完整路径，<strong><code>%texfile</code></strong>则是对应的 .tex 源文件。考虑到我们对反向搜索也有需求，按照官方文档，我们还需要加上<strong><code>-r</code></strong>参数。</p>
+<p>因此，在 VSCode 的配置里，我们需要给出这样的 <strong><code>JSON 配置</code></strong>:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&quot;latex-workshop.view.pdf.viewer&quot;: &quot;external&quot;,</span><br><span class="line">&quot;latex-workshop.view.pdf.external.synctex&quot;: &#123;</span><br><span class="line">    &quot;command&quot;: &quot;/Applications/Skim.app/Contents/SharedSupport/displayline&quot;,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;-r&quot;,</span><br><span class="line">        &quot;%LINE%&quot;,</span><br><span class="line">        &quot;%PDF%&quot;,</span><br><span class="line">        &quot;%TEX%&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<p><strong><code>LaTeX workshop</code></strong>插件的配置中，除了 <strong><code>latex-workshop.view.pdf.external.synctex</code></strong>，还有一项也和打开外部 PDF 浏览器有关。它是 <strong><code>latex-workshop.view.pdf.external.command</code></strong>，表示简单地打开 PDF 文件，而忽略正向搜索功能。<strong><code>Skim</code></strong>提供的命令行脚本默认不支持这样的操作，我们需要根据<strong><code>displayline</code></strong>脚本自行修改。</p>
+<p><strong><code>displayline</code></strong>脚本调用了 <strong><code>Apple Script</code></strong> 来实现与 <strong><code>Skim.app</code></strong> 的交互，此处我们照葫芦画瓢，模拟一个即可。我们可以将如下脚本保存为 <strong><code>displayfile</code></strong> 并以 <strong><code>chmod u+x displayfile</code></strong> 使其变为可执行脚本，而后将其放在<strong><code>环境变量 PATH</code></strong> 包含的目录中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">#!/bin/bash</span><br><span class="line"></span><br><span class="line"># displayfile (Skim)</span><br><span class="line">#</span><br><span class="line"># Usage: displayfile [-r] [-g] PDFFILE</span><br><span class="line">#</span><br><span class="line"># Modified from &quot;displayline&quot; to only revert the file, not jump to a given line</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line">if [ $# == 0 -o &quot;$1&quot; == &quot;-h&quot; -o &quot;$1&quot; == &quot;-help&quot; ]; then</span><br><span class="line">  echo &quot;Usage: displayfile [-r] [-g] PDFFILE</span><br><span class="line">Options:</span><br><span class="line">-r, -revert      Revert the file from disk if it was open</span><br><span class="line">-g, -background  Do not bring Skim to the foreground&quot;</span><br><span class="line">  exit 0</span><br><span class="line">fi</span><br><span class="line"></span><br><span class="line"># get arguments</span><br><span class="line">revert=false</span><br><span class="line">activate=true</span><br><span class="line">while [ &quot;$&#123;1:0:1&#125;&quot; == &quot;-&quot; ]; do</span><br><span class="line">  if [ &quot;$1&quot; == &quot;-r&quot; -o &quot;$1&quot; == &quot;-revert&quot; ]; then</span><br><span class="line">    revert=true</span><br><span class="line">  elif [ &quot;$1&quot; == &quot;-g&quot; -o &quot;$1&quot; == &quot;-background&quot; ]; then</span><br><span class="line">    activate=false</span><br><span class="line">  fi</span><br><span class="line">  shift</span><br><span class="line">done</span><br><span class="line">file=&quot;$1&quot;</span><br><span class="line">#shopt -s extglob</span><br><span class="line">#[ $# -gt 2 ] &amp;&amp; source=&quot;$3&quot; || source=&quot;$&#123;file%.@(pdf|dvi|xdv)&#125;.tex&quot;</span><br><span class="line"></span><br><span class="line"># expand relative paths</span><br><span class="line">[ &quot;$&#123;file:0:1&#125;&quot; == &quot;/&quot; ] || file=&quot;$&#123;PWD&#125;/$&#123;file&#125;&quot;</span><br><span class="line"></span><br><span class="line"># pass file arguments as NULL-separated string to osascript</span><br><span class="line"># pass through cat to get them as raw bytes to preserve non-ASCII characters</span><br><span class="line">/usr/bin/osascript \</span><br><span class="line">  -e &quot;set theFile to POSIX file \&quot;$file\&quot;&quot; \</span><br><span class="line">  -e &quot;set thePath to POSIX path of (theFile as alias)&quot; \</span><br><span class="line">  -e &quot;tell application \&quot;Skim\&quot;&quot; \</span><br><span class="line">  -e &quot;  if $activate then activate&quot; \</span><br><span class="line">  -e &quot;  if $revert then&quot; \</span><br><span class="line">  -e &quot;    try&quot; \</span><br><span class="line">  -e &quot;      set theDocs to get documents whose path is thePath&quot; \</span><br><span class="line">  -e &quot;      if (count of theDocs) &gt; 0 then revert theDocs&quot; \</span><br><span class="line">  -e &quot;    end try&quot; \</span><br><span class="line">  -e &quot;  end if&quot; \</span><br><span class="line">  -e &quot;  open theFile&quot; \</span><br><span class="line">  -e &quot;end tell&quot;</span><br></pre></td></tr></table></figure>
+<p>至此，需要更新 VSCode 的配置。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&quot;latex-workshop.view.pdf.external.command&quot;: &#123;</span><br><span class="line">    &quot;command&quot;: &quot;displayfile&quot;,</span><br><span class="line">    &quot;args&quot;: [</span><br><span class="line">        &quot;-r&quot;,</span><br><span class="line">        &quot;%PDF%&quot;</span><br><span class="line">    ]</span><br><span class="line">&#125;,</span><br></pre></td></tr></table></figure>
+<h3 id="反向搜索"><a href="#反向搜索" class="headerlink" title="反向搜索"></a>反向搜索</h3><p>在反向搜索中，我们需要让 Skim 能够打开 VSCode，并将文件名和相应的行号正确地传给 VSCode。根据 Skim 官网的介绍，它只会从<strong><code>/usr/bin</code></strong>和 <strong><code>/usr/local/bin</code></strong> 中检索可执行程序。为此，我们需要将 VSCode 的可执行程序软链到这两个目录中的一个当中。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -sf /Applications/Visual\ Studio\ Code.app/Contents/MacOS/Electron /usr/local/bin/vscode</span><br></pre></td></tr></table></figure>
+<p>至此，我们在命令行中执行 <strong><code>vscode -g &quot;%file&quot;:%line</code></strong> 即可打开 <strong><code>%file</code></strong> 文件并定位到第 <strong><code>%line</code></strong> 行。于是，我们只需要在 Skim 的同步配置中将预设改为「自定义」，并将命令和参数分别设置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Command: vscode</span><br><span class="line">Arguments: -g &quot;%file&quot;:%line</span><br></pre></td></tr></table></figure>
+<p>如此即完成了配置。</p>
 
       
     </div>
@@ -467,12 +476,12 @@
   <!-- JS库 sweetalert 可修改路径 -->
   <script src="https://cdn.bootcss.com/jquery/2.0.0/jquery.min.js"></script>
   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-  <p><span>本文标题:</span><a href="/2018/07/18/【Python进阶-05】-05-set-datastruct/">【Python进阶-05】-05_set_datastruct</a></p>
+  <p><span>本文标题:</span><a href="/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/">Mac上配置VSCode与Skim的LaTeX正反跳转</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 hkkhuang 的个人博客">hkkhuang</a></p>
-  <p><span>发布时间:</span>2018年07月18日 - 22:07</p>
-  <p><span>最后更新:</span>2018年09月30日 - 14:09</p>
-  <p><span>原始链接:</span><a href="/2018/07/18/【Python进阶-05】-05-set-datastruct/" title="【Python进阶-05】-05_set_datastruct">http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/</a>
-    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://hkkhuang.com/2018/07/18/【Python进阶-05】-05-set-datastruct/"  aria-label="复制成功！"></i></span>
+  <p><span>发布时间:</span>2019年01月24日 - 17:01</p>
+  <p><span>最后更新:</span>2019年01月24日 - 17:01</p>
+  <p><span>原始链接:</span><a href="/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/" title="Mac上配置VSCode与Skim的LaTeX正反跳转">http://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/</a>
+    <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>  
 </div>
@@ -505,7 +514,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Python/" <i class="fa fa-tag"></i> Python</a>
+            <a href="/tags/Tools/" <i class="fa fa-tag"></i> Tools</a>
+          
+            <a href="/tags/VSCode/" <i class="fa fa-tag"></i> VSCode</a>
+          
+            <a href="/tags/Latex/" <i class="fa fa-tag"></i> Latex</a>
           
         </div>
       
@@ -518,8 +531,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/11/【Python进阶-04】-Map-和-Filter/" rel="next" title="【Python进阶-04】-Map 和 Filter">
-                <i class="fa fa-chevron-left"></i> 【Python进阶-04】-Map 和 Filter
+              <a href="/2019/01/23/在vscode中设置显示Powerline字体/" rel="next" title="在vscode中设置显示Powerline字体">
+                <i class="fa fa-chevron-left"></i> 在vscode中设置显示Powerline字体
               </a>
             
           </div>
@@ -527,10 +540,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/07/21/【Python进阶-06】-ternary-operator/" rel="prev" title="【Python进阶-06】-ternary_operator 三元运算符（条件表达式）">
-                【Python进阶-06】-ternary_operator 三元运算符（条件表达式） <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -699,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Set集合"><span class="nav-number">1.</span> <span class="nav-text">Set集合</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#交集"><span class="nav-number">1.1.</span> <span class="nav-text">交集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#并集"><span class="nav-number">1.2.</span> <span class="nav-text">并集</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#差集"><span class="nav-number">1.3.</span> <span class="nav-text">差集</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#正向搜索"><span class="nav-number">1.</span> <span class="nav-text">正向搜索</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反向搜索"><span class="nav-number">2.</span> <span class="nav-text">反向搜索</span></a></li></ol></div>
             
 
           </div>
