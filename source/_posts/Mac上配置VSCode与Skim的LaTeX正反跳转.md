@@ -130,7 +130,9 @@ Arguments: -g "%file":%line
 
 如此即完成了配置。
 
-**在 Skim 中跳转到TeX源码对应的位置的快捷键: `command + shift + click**`
+**在 Skim 中跳转到TeX源码对应的位置的快捷键:  `command + shift + click`**
+
+
 
 
 
