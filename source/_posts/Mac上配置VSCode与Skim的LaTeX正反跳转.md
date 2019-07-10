@@ -111,6 +111,8 @@ file="$1"
 },
 ```
 
+**配置完成后,可以从 TeX 源码跳转到 Skim 中对应的 PDF 文件位置(有圆点醒目位置提醒)，快捷键为: `option+command+j` ；**
+
 ### 反向搜索
 
 在反向搜索中，我们需要让 Skim 能够打开 VSCode，并将文件名和相应的行号正确地传给 VSCode。根据 Skim 官网的介绍，它只会从**` /usr/bin `**和 **`/usr/local/bin`** 中检索可执行程序。为此，我们需要将 VSCode 的可执行程序软链到这两个目录中的一个当中。
@@ -128,9 +130,9 @@ Arguments: -g "%file":%line
 
 如此即完成了配置。
 
-在 Skim 中跳转到TeX源码对应的位置的快捷键: `command + shift + click`
+**在 Skim 中跳转到TeX源码对应的位置的快捷键: `command + shift + click**`
 
 
 
-> - **参考原文链接：** https://liam.page/2018/04/24/Working-with-VSCode-on-macOS-configuration-LaTeX-workshop-and-Skim/
+> **参考 原文链接：** https://liam.page/2018/04/24/Working-with-VSCode-on-macOS-configuration-LaTeX-workshop-and-Skim/
 
