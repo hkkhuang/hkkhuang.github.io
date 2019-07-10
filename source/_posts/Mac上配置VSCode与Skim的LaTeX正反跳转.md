@@ -127,3 +127,10 @@ Arguments: -g "%file":%line
 ```
 
 如此即完成了配置。
+
+在 Skim 中跳转到TeX源码对应的位置的快捷键: `command + shift + click`
+
+
+
+> - **参考原文链接：** https://liam.page/2018/04/24/Working-with-VSCode-on-macOS-configuration-LaTeX-workshop-and-Skim/
+
