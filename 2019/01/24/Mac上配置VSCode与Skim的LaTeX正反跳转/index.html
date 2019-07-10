@@ -84,7 +84,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Tools,VSCode,Latex," />
+  <meta name="keywords" content="Tools,Latex,VSCode," />
 
 
 
@@ -101,7 +101,7 @@
 
 
 <meta name="description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
-<meta name="keywords" content="Tools,VSCode,Latex">
+<meta name="keywords" content="Tools,Latex,VSCode">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Mac上配置VSCode与Skim的LaTeX正反跳转">
 <meta property="og:url" content="https://hkkhuang.com/2019/01/24/Mac上配置VSCode与Skim的LaTeX正反跳转/index.html">
@@ -109,7 +109,7 @@
 <meta property="og:description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://cdn.hkkhuang.cn/20190122144745.png">
-<meta property="og:updated_time" content="2019-07-10T14:43:42.599Z">
+<meta property="og:updated_time" content="2019-07-10T14:47:19.345Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Mac上配置VSCode与Skim的LaTeX正反跳转">
 <meta name="twitter:description" content="正向搜索正向搜索指的是从 .tex 源文件向编译生成的 PDF 文件的跳转。这部分我们主要需要寻找到合适的方式，在命令行状态打开 Skim 应用。 根据 Skim 官网的介绍，Skim 提供了名为 displayline 的脚本，用于和 TeX 正反同步协同工作。其脚本位于: 1/Applications/Skim.app/Contents/SharedSupport/displayline">
@@ -451,7 +451,7 @@
 <p>至此，我们在命令行中执行 <strong><code>vscode -g &quot;%file&quot;:%line</code></strong> 即可打开 <strong><code>%file</code></strong> 文件并定位到第 <strong><code>%line</code></strong> 行。于是，我们只需要在 Skim 的同步配置中将预设改为「自定义」，并将命令和参数分别设置如下：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Command: vscode</span><br><span class="line">Arguments: -g &quot;%file&quot;:%line</span><br></pre></td></tr></table></figure>
 <p>如此即完成了配置。</p>
-<p><strong>在 Skim 中跳转到TeX源码对应的位置的快捷键: `command + shift + click</strong>`</p>
+<p><strong>在 Skim 中跳转到TeX源码对应的位置的快捷键:  <code>command + shift + click</code></strong></p>
 <blockquote>
 <p><strong>参考 原文链接：</strong> <a href="https://liam.page/2018/04/24/Working-with-VSCode-on-macOS-configuration-LaTeX-workshop-and-Skim/" target="_blank" rel="noopener">https://liam.page/2018/04/24/Working-with-VSCode-on-macOS-configuration-LaTeX-workshop-and-Skim/</a></p>
 </blockquote>
@@ -521,9 +521,9 @@
           
             <a href="/tags/Tools/" <i class="fa fa-tag"></i> Tools</a>
           
-            <a href="/tags/VSCode/" <i class="fa fa-tag"></i> VSCode</a>
-          
             <a href="/tags/Latex/" <i class="fa fa-tag"></i> Latex</a>
+          
+            <a href="/tags/VSCode/" <i class="fa fa-tag"></i> VSCode</a>
           
         </div>
       
