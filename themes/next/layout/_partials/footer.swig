@@ -13,7 +13,9 @@
 {% if theme.copyright %}
 <div class="powered-by">
 	<span>
-		苏ICP备18016966号 
+    <a class="theme-link" rel="external nofollow" href="http://www.beian.miit.gov.cn/">
+    苏ICP备18016966号
+  </a> 
 	</span>
 </div>
 
